@@ -1,0 +1,22 @@
+﻿@model Northwind.EntityModels.Category
+@{
+    ViewData["Title"] = "Category";
+}
+<h2>Category details</h2>
+<hr />
+<div class="category-main-container">
+    <div class="category-container">
+        <dd><img src="~/images/category@(Model.CategoryId).jpeg" alt="@Model.CategoryName" class="category-image" /></dd>
+    
+        <dl class="dl-horizontal">
+            <dt class="category-text">Category id</dt>
+            <dd class="category-text">@Model.CategoryId</dd>
+
+            <dt class="category-text">Category Name</dt>
+            <dd class="category-text">@Model.CategoryName</dd>
+
+            <dt class="category-text">Description</dt>
+            <dd class="category-text">@Model.Description</dd>
+        </dl>
+    </div>
+</div>
